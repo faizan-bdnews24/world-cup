@@ -1,6 +1,6 @@
 <style>
-    div[data-infinite-scroll="3"] {
-        background-color: #431c5D;
+    div[data-infinite-scroll="5"] {
+        background-color: #00b1eb;
         margin-right: calc(-50vw + 50%);
         margin-left: calc(-50vw + 50%);
         padding: var(--space2) calc(50vw - 50%) 0;
@@ -14,17 +14,17 @@
 
     #wc_box_header {
         margin: 10px auto;
-        background-color: #431c5D;
+        background-color: #00b1eb;
     }
 
     #wc_box_header #banner {
         margin: 0 0 10px;
-        background-color: #38B1E5;
+        background-color: #00b1eb;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-
+#wc_box_header #banner img{width:100%;}
     #wc_box_header div#buttons {
         display: flex;
         flex-wrap: wrap;
@@ -37,14 +37,13 @@
         min-width: 220px;
         text-decoration: none;
         text-align: center;
-        background-color: #ff3054;
+        background-color: #0697cc;
         color: #f3ff70;
     }
 
-    @media only screen and (min-width: 1400px) {
-        #wc_box_header div#buttons a {
-            min-width: 260px;
-        }
+    @media only screen and (min-width: 1100px) {
+	#wc_box_header #banner img{width:auto;height:100px;}
+
     }
 
     @media only screen and (max-width: 1024px) and (min-width: 728px) {
@@ -56,13 +55,14 @@
         }
     }
 
-    @media only screen and (max-width: 729px)and (min-width: 399px) {
-        #wc_box_header #banner img:nth-of-type(2) {
+     @media only screen and (max-width: 729px)and (min-width: 399px) {
+    /*    #wc_box_header #banner img:nth-of-type(2) {
             display: none;
-        }
+        }*/
         #wc_box_header div#buttons a {
             min-width: 160px
         }
+	
     }
 
     @media only screen and (max-width:400px) {
@@ -72,21 +72,22 @@
         #wc_box_header div#buttons a {
             min-width: 100px
         }
+	
     }
 </style>
 <div id="wc_box_header">
-    <a id="banner" href="https://bangla.bdnews24.com/cricket/t20wc2022">
-		<img src="https://d2movi6j6mtjdd.cloudfront.net/dev/wc-t20-2022/countdown_left.png" /> 
-		<img src="https://d2movi6j6mtjdd.cloudfront.net/dev/wc-t20-2022/countdown_right.png" />
+    <a id="banner" href="https://bangla.bdnews24.com/cricket/world-cup-2023">
+		<img src="https://faizan-bdnews24.github.io/world-cup/2023/images/wc_2023_banner_bn.png" /> 
+		<img src="https://faizan-bdnews24.github.io/world-cup/2023/images/wc_2023_banner_bn_mobile.png" />
 	</a>
     <div id="buttons"> 
-		<a href="https://bangla.bdnews24.com/cricket/t20wc2022/l0jm3musw7">সূচি</a> 
-		<a href="https://bangla.bdnews24.com/cricket/t20wc2022/5cy0yw1aj5">পয়েন্ট টেবিল</a> 
-		<a href="https://bangla.bdnews24.com/cricket/t20wc2022/rebxg3p3i3">সর্বোচ্চ রান</a>
-        <a href="https://bangla.bdnews24.com/cricket/t20wc2022/3tlbvwdvtf">সর্বোচ্চ উইকেট</a> 
-		<a href="https://bangla.bdnews24.com/cricket/t20wc2022/fn4fnsnpdw">ম্যাচের ফল</a> 
-		<a href="https://bangla.bdnews24.com/collection/cricket-record">রেকর্ড</a> 
-		<a href="https://bangla.bdnews24.com/cricket/t20wc2022/team-profile">১৬ দলের স্কোয়াড</a>            
-		<a href="https://bangla.bdnews24.com/cricket/t20wc2022/eszqmkipxh">রোল অব অনার</a> 
+		<a href="https://bangla.bdnews24.com/cricket/k85fyhc9b8">সূচি</a> 
+		<!--<a href="#">পয়েন্ট টেবিল</a>-->
+		<a href="https://bangla.bdnews24.com/cricket/world-cup-2023/5b5dljone3">সর্বোচ্চ রান</a>
+        <a href="https://bangla.bdnews24.com/cricket/world-cup-2023/h7uu0y919q">সর্বোচ্চ উইকেট</a> 
+		<a href="https://bangla.bdnews24.com/cricket/world-cup-2023/fgenvpsz3i">ম্যাচের ফল</a> 
+		<!--<a href="#">রেকর্ড</a> 
+		<a href="#">১৬ দলের স্কোয়াড</a>            
+		<a href="#">রোল অব অনার</a>--> 
 	</div>
 </div>
