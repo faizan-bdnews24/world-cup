@@ -1,0 +1,40 @@
+<style>
+ div[data-infinite-scroll="0"] .OEtoD {
+	padding: 0;
+	overflow: hidden;
+	border: none;
+    }
+.scorecard{
+	margin-top: 10px;
+	width:100%;
+	background-color:#FCEAEA;
+	background-repeat: no-repeat;
+	cursor:pointer;
+	border: 1px solid red;
+}
+#score_url{display:none;}
+@media only screen and (min-width:981px) {
+	.scorecard{
+		width:980px;
+		height:95px;
+		background-image: url("https://faizan-bdnews24.github.io/scorecard/asia-cup-2023/asset/bg_desk_en_1.svg");
+	}
+	.scorecard #desk_score{height:90px;position: relative;left: 325px;top: 0px;}
+
+}
+@media only screen and (max-width:980px) {
+	.scorecard{
+		max-width:320px;
+		height:190px;
+		background-image: url("https://faizan-bdnews24.github.io/scorecard/asia-cup-2023/asset/bg_mobile_en_1.svg");
+	}
+	.scorecard #desk_score{height:113px;position: relative;left: 0px;top: 45px;}
+	#score_url{margin: 50px 0px 0 5px;display:block;color:#012559;text-decoration:none;font-size: 14px;font-weight:bold;text-align: center;}
+}
+
+</style>
+<div class="scorecard" onclick="location.href='https://bangla.bdnews24.com/cricket/x6cc2z93bd';">
+<iframe id="desk_score" height="90px" width="320px" scrolling="no" src="https://read.pavscores.com/#/en/cricket/bdnews/114"
+style="-webkit-transform:scale(1);-moz-transform-scale(1);border: 0px none;"></iframe>
+<a id="score_url" href="https://bangla.bdnews24.com/cricket/x6cc2z93bd">Full Scorecard</a>
+</div>

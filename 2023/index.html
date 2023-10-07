@@ -24,7 +24,8 @@
         flex-wrap: wrap;
         justify-content: space-between;
     }
-#wc_box_header #banner img{width:100%;}
+    #wc_box_header #banner #mobile {display:none;}
+	#wc_box_header #banner img{width:100%;}
     #wc_box_header div#buttons {
         display: flex;
         flex-wrap: wrap;
@@ -41,12 +42,12 @@
         color: #f3ff70;
     }
 
-    @media only screen and (min-width: 1100px) {
+    @media only screen and (min-width: 1024px) {
 	#wc_box_header #banner img{width:auto;height:100px;}
 
     }
 
-    @media only screen and (max-width: 1024px) and (min-width: 728px) {
+    @media only screen and (max-width: 1023px) and (min-width: 728px) {
         #wc_box_header #banner {
             text-align: center;
         }
@@ -55,8 +56,8 @@
         }
     }
 
-     @media only screen and (max-width: 729px)and (min-width: 399px) {
-    /*    #wc_box_header #banner img:nth-of-type(2) {
+     @media only screen and (max-width: 729px)and (min-width: 500px) {
+    /*    #wc_box_header #banner #desktop {
             display: none;
         }*/
         #wc_box_header div#buttons a {
@@ -65,10 +66,11 @@
 	
     }
 
-    @media only screen and (max-width:400px) {
-        #wc_box_header #banner img:nth-of-type(2) {
+    @media only screen and (max-width:499px) {
+        #wc_box_header #banner #desktop {
             display: none;
         }
+		#wc_box_header #banner #mobile {width:auto;height:60px;display:block;}
         #wc_box_header div#buttons a {
             min-width: 100px
         }
@@ -77,8 +79,8 @@
 </style>
 <div id="wc_box_header">
     <a id="banner" href="https://bangla.bdnews24.com/cricket/world-cup-2023">
-		<img src="https://faizan-bdnews24.github.io/world-cup/2023/images/wc_2023_banner_bn.png" /> 
-		<img src="https://faizan-bdnews24.github.io/world-cup/2023/images/wc_2023_banner_bn_mobile.png" />
+		<img id="desktop" src="https://faizan-bdnews24.github.io/world-cup/2023/images/wc_2023_banner_bn.png" /> 
+		<img id="mobile" src="https://faizan-bdnews24.github.io/world-cup/2023/images/wc_2023_banner_bn_mobile.png" />
 	</a>
     <div id="buttons"> 
 		<a href="https://bangla.bdnews24.com/cricket/k85fyhc9b8">সূচি</a> 
